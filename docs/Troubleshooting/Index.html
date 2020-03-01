@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="master (10-dev)" name="book-version"/>
+<meta content="master (10-dev)" name="book-release"/>
+<meta content="Installation and Upgrade Guide" name="docsearch:name"/>
+<meta content="master (10-dev)" name="docsearch:version"/>
+<meta content="" name="docsearch:package_type"/>
+<title>Troubleshooting — Installation and Upgrade Guide master (10-dev) documentation</title>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Installation and Upgrade Guide master (10-dev) documentation"/>
+<link href="../Sitemap/Index.html" rel="next" title="Sitemap"/>
+<link href="../ReleaseIntegrity/Index.html" rel="prev" title="TYPO3 Release Integrity"/>
+<script src="../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<a class="logo" href="https://docs.typo3.org" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../_static/img/typo3-logo.svg" width="484"/>
+</a>
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../Index.html">Installation and Upgrade Guide</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<div class="toc-search" role="search">
+<form action="../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div><div aria-label="main navigation" class="toc" role="navigation">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/Index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuickInstall/Index.html">Quick Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/Composer/Index.html">Install TYPO3 via composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/GetAndUnpack/Index.html">Install TYPO3 Without Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/TheInstallTool/Index.html">The Install Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../In-depth/Index.html">In-Depth Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/SystemRequirements/Index.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/WhichPackageAndFormat/Index.html">Which Package and Which Format?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/ThePackageInDetail/Index.html">The Package in Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/TheInstallTool/Index.html">TYPO3 System Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/Distributions/Index.html">The Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/TranslatingTheBackend/Index.html">Translating the Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Composer/Index.html">Working With Composer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ExtensionInstallation/Index.html">Extension Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Upgrade/Index.html">Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/Preparation/Index.html">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/Backup/Index.html">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateReferenceIndex/Index.html">Reference Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/InstallTheNewSource/Index.html">Install the New Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ConvertGlobalExtensions/Index.html">Convert Global Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UseTheUpgradeWizard/Index.html">Use the Upgrade Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/RunTheDatabaseAnalyzer/Index.html">Run the Database Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ClearCachesAndUserSettings/Index.html">Clear User Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/RemoveTemporaryCacheFiles/Index.html">Clear Caches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ChangelogAndNewsmd/Index.html">Check the ChangeLog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateExtensions/Index.html">Update Extensions (non-Composer Installations)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateTranslations/Index.html">Update Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpgradeToV10/Index.html">Upgrade to v10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../MigrateToComposer/Index.html">Migrate TYPO3 Project to Composer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/Requirements.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/MigrationSteps.html">Migration Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/CoWorking.html">Co-working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/BestPractices.html">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseIntegrity/Index.html">TYPO3 Release Integrity</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sitemap/Index.html">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<a accesskey="p" class="no-focus" href="../ReleaseIntegrity/Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../Sitemap/Index.html" tabindex="-1"></a>
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
+<li aria-current="page" class="breadcrumb-item active">Troubleshooting</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/edit/master/Documentation/Troubleshooting/Index.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../_sources/Troubleshooting/Index.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="section" id="troubleshooting">
+<span id="id1"></span><h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<p>The following sections contain hints to help you solve common problems.
+Note that you should also check the section
+<span class="guilabel">“ADMIN TOOLS &gt; Environment &gt; Environment Status”</span> in the
+Install Tool or TYPO3 backend. TYPO3 will inform you about errors and
+warnings in your installation. Follow the advice given there to fix those issues.
+This helps to solve or prevent most issues.</p>
+<p>During troubleshooting, in the <span class="guilabel">“Settings &gt; Configuration Presets”</span> section of the Install
+Tool, under “Debug settings”, you should select the “Debug” preset. This is
+especially helpful, if e.g. in the Frontend you only see a blank page. With
+debug settings activated, the PHP error message will be displayed, which will
+help you narrow down the problem.</p>
+<p>You may also have to enable this TypoScript setting:</p>
+<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span><span class="nb">config</span><span class="p">.</span>contentObjectExceptionHandler <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference external" href="https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/ErrorAndExceptionHandling/Examples/Index.html#error-handling-configuration-examples-debug" title="(in TYPO3 Explained vmaster (10-dev))"><span>Debugging and development setup</span></a></p>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Do not permanently enable debug presets, but set it back to production (“Live”)
+after you have fixed the problem (or analyze the problem on a test system).</p>
+</div>
+<p>If necessary, look in relevant logs for further clues:</p>
+<ul class="simple">
+<li>Webserver log files for general problems (e.g. <code class="file docutils literal notranslate"><span class="pre">/var/log/apache2</span></code> on
+Linux based system)</li>
+<li>TYPO3 Administration log in <span class="guilabel">SYSTEM &gt; Log</span> (in the backend)</li>
+<li>TYPO3 logs writting by <a class="reference external" href="https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/Logging/Index.html#logging" title="(in TYPO3 Explained vmaster (10-dev))"><span class="xref std std-ref">Logging Framework</span></a> in <code class="file docutils literal notranslate"><span class="pre">typo3temp/var/log</span></code></li>
+</ul>
+<p>What gets written where depends on how you have configured the error handling and logging.</p>
+<div class="section" id="apache">
+<span id="id2"></span><h2>Apache<a class="headerlink" href="#apache" title="Permalink to this headline">¶</a></h2>
+<p>Some settings may require adjustment for TYPO3 to operate
+correctly.</p>
+<div class="section" id="enable-mod-rewrite">
+<span id="enable-necessary-modules"></span><span id="id3"></span><h3>Enable mod_rewrite<a class="headerlink" href="#enable-mod-rewrite" title="Permalink to this headline">¶</a></h3>
+<p>TYPO3 makes use of several Apache modules (see
+<a class="reference internal" href="../In-depth/SystemRequirements/Index.html#system-requirements-apache"><span class="std std-ref">System Requirements</span></a> for more information).</p>
+<p>If mod_rewrite is not enabled, the URL handling will not work
+properly (specifically the mapping of the URLs TYPO3 uses internally
+to “speaking URLs”) and you might get 404 (page not found) errors.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">How Apache modules are enabled, depends on your system. Look in the
+documentation for your operating system distribution.</p>
+</div>
+<p>For example, the modules can be
+enabled by editing your http.conf file, locating the required modules
+and removing the preceding hash symbol:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="c1">#LoadModule expires_module modules/mod_expires.so</span>
+<span class="c1">#LoadModule rewrite_module modules/mod_rewrite.so</span>
+</pre></div>
+</div>
+<p>Or, just do</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>a2enmod rewrite expires
+</pre></div>
+</div>
+<p>As usual, after changing configuration, you must reload / restart the
+Apache service.</p>
+</div>
+<div class="section" id="adjust-threadstacksize-on-windows">
+<span id="id4"></span><h3>Adjust ThreadStackSize on Windows<a class="headerlink" href="#adjust-threadstacksize-on-windows" title="Permalink to this headline">¶</a></h3>
+<p>If you are running TYPO3 on top of Windows, the extension manager might not
+appear. Instead you might only see a blank screen in the right frame.</p>
+<p>This problem is caused by the value of ThreadStackSize, which on
+Windows systems by default is set too low. To fix this, add the
+following lines at the end of your httpd.conf file:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">IfModule</span> <span class="nx">mpm_winnt_module</span><span class="o">&gt;</span>
+  <span class="nx">ThreadStackSize</span> <span class="mi">8388608</span>
+<span class="o">&lt;/</span><span class="nx">IfModule</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="php">
+<span id="id5"></span><h2>PHP<a class="headerlink" href="#php" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-tool">
+<span id="id6"></span><h3>Install Tool<a class="headerlink" href="#install-tool" title="Permalink to this headline">¶</a></h3>
+<p>The “System Environment” section of the Install Tool provides detailed
+information about any missing PHP modules and any other settings that
+may not be configured correctly.</p>
+<p>For example, the PHP extensions openssl and fileinfo must be enabled. This can
+be achieved by adding (or uncommenting) the following lines in the [PHP]
+section of your php.ini file:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">extension</span><span class="o">=</span><span class="nx">fileinfo</span><span class="o">.</span><span class="nx">so</span>
+<span class="nx">extension</span><span class="o">=</span><span class="nx">openssl</span><span class="o">.</span><span class="nx">so</span>
+</pre></div>
+</div>
+<p>On a Windows-based server, these are the extension files:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">extension</span><span class="o">=</span><span class="nx">php_fileinfo</span><span class="o">.</span><span class="nx">dll</span>
+<span class="nx">extension</span><span class="o">=</span><span class="nx">php_openssl</span><span class="o">.</span><span class="nx">dll</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="php-caches-extension-classes-etc">
+<span id="id7"></span><h3>PHP Caches, Extension Classes etc.<a class="headerlink" href="#php-caches-extension-classes-etc" title="Permalink to this headline">¶</a></h3>
+<p>There are some situations which can cause what appear to be totally
+illogical problems after an upgrade:</p>
+<ul class="simple">
+<li>If extensions override classes in which functions have changed.
+Solution: Try disabling all extensions and then enable them one by
+one until the error recurs.</li>
+<li>If a PHP cache somehow fails to re-cache scripts: in particular, if a
+change happened to a parent class overridden by a child class which was not updated.
+Solution: Remove ALL cached PHP files (for PHP-Accelerator, remove <code class="file docutils literal notranslate"><span class="pre">/tmp/phpa_*</span></code>)
+and restart Apache.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="mysql">
+<span id="id8"></span><h2>MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="character-set">
+<span id="character-sets"></span><h3>Character Set<a class="headerlink" href="#character-set" title="Permalink to this headline">¶</a></h3>
+<p>TYPO3 uses UTF-8 encoding, you will need to ensure that your
+instance of MySQL also uses UTF-8. When installing TYPO3 for
+the first time, you can select UTF-8 encoding when you create
+the database for the first time. For an existing database, you
+will have to set each table and column to use UTF-8.</p>
+</div>
+</div>
+<div class="section" id="typo3">
+<span id="typo3-specific"></span><h2>TYPO3<a class="headerlink" href="#typo3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cached-files-in-typo3temp">
+<span id="id9"></span><h3>Cached Files in typo3temp/<a class="headerlink" href="#cached-files-in-typo3temp" title="Permalink to this headline">¶</a></h3>
+<p>Generally you should know that TYPO3 generates temporary “cached”
+files and PHP scripts in <code class="file docutils literal notranslate"><span class="pre">typo3temp/Cache/</span></code>. You can remove the
+whole <code class="file docutils literal notranslate"><span class="pre">typo3temp/Cache</span></code> directory at any time; the directory
+structure and all the caches will be re-written on the next hit to the
+system.</p>
+<p>A shortcut to remove these caches can be found in the Install Tool,
+under “Important Actions”. This might be useful in the event your
+cache files become damaged and your system is not running correctly. The
+Install Tool won’t load any of these caches or any extension, so it
+should be safe to use regardless of the corrupt state of the Caches.</p>
+<p>Amongst other caches, under <code class="file docutils literal notranslate"><span class="pre">typo3temp/Cache/Code/cache_core/</span></code>
+you find files like these:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="nx">rw</span><span class="o">-</span><span class="nx">rw</span><span class="o">----</span>   <span class="mi">1</span> <span class="nx">www</span><span class="o">-</span><span class="nx">data</span>   <span class="nx">www</span><span class="o">-</span><span class="nx">data</span>   <span class="mi">61555</span>  <span class="mi">2014</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">26</span> <span class="mi">16</span><span class="o">:</span><span class="mi">28</span>   <span class="nx">ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70</span><span class="o">.</span><span class="nx">php</span>
+<span class="o">-</span><span class="nx">rw</span><span class="o">-</span><span class="nx">rw</span><span class="o">----</span>   <span class="mi">1</span> <span class="nx">www</span><span class="o">-</span><span class="nx">data</span>   <span class="nx">www</span><span class="o">-</span><span class="nx">data</span>   <span class="mi">81995</span>  <span class="mi">2014</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">26</span> <span class="mi">16</span><span class="o">:</span><span class="mi">28</span>   <span class="nx">ext_tables_c3638687920118a92ab652cbf23a9ca69d4a6469</span><span class="o">.</span><span class="nx">php</span>
+</pre></div>
+</div>
+<p>These files simply contain all <code class="file docutils literal notranslate"><span class="pre">ext_tables.php</span></code> and
+<code class="file docutils literal notranslate"><span class="pre">ext_localconf.php</span></code> files of the installed extensions
+concatenated in the order they are loaded. Therefore including one of
+these files would be the same as including potentially hundreds of PHP
+files and should improve performance.</p>
+<p>Concerning these files you have to consider the following:</p>
+<ol class="arabic simple">
+<li>Making changes to these files does not make sense, because they can
+be removed and recreated from the “originals” at any time. You should
+instead change the “originals”.</li>
+<li>If you make changes to the original <code class="file docutils literal notranslate"><span class="pre">ext_tables.php</span></code> or
+<code class="file docutils literal notranslate"><span class="pre">ext_localconf.php</span></code> files in your extensions, you will have
+to clear the cached files away for your changes to take effect.</li>
+</ol>
+</div>
+<div class="section" id="possible-problems-with-the-cached-files">
+<span id="id10"></span><h3>Possible Problems With the Cached Files<a class="headerlink" href="#possible-problems-with-the-cached-files" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="changing-the-absolute-path-to-typo3">
+<span id="id11"></span><h4>Changing the absolute path to TYPO3<a class="headerlink" href="#changing-the-absolute-path-to-typo3" title="Permalink to this headline">¶</a></h4>
+<p>If you change the path of the TYPO3 installation, you might get a lot
+of errors like “Failed opening …” or “Unable to access …”. The
+problem is that absolute file paths are hard-coded inside the cached
+files.</p>
+<p>Fix: Clean the cache using the Install Tool: Go to “Important Actions”
+and use the “Clear all caches” function. Then hit the page again.</p>
+</div>
+<div class="section" id="changing-image-processing-settings">
+<span id="id12"></span><h4>Changing Image Processing Settings<a class="headerlink" href="#changing-image-processing-settings" title="Permalink to this headline">¶</a></h4>
+<p>When you change the settings for Image Processing (in normal mode),
+you must take into account that old images may still be in the
+<code class="file docutils literal notranslate"><span class="pre">typo3temp/</span></code> folder and that they prevent new files from being
+generated! This is especially important to know, if you are trying to
+set up image processing for the very first time.</p>
+<p>The problem is solved by clearing the files in the <code class="file docutils literal notranslate"><span class="pre">typo3temp/</span></code>
+folder. Also make sure to clear the database table “cache_pages”.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../ReleaseIntegrity/Index.html" title="Accesskey Alt(+Shift)+p">
+                        Previous
+                    </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../Sitemap/Index.html" title="Accesskey Alt(+Shift)+n">
+                        Next
+                    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner"><div class="footer-additional"><p class="text-center">Last rendered on Mar 01, 2020 16:27</p><p class="text-center"><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">TYPO3 Theme 4.1.3</a></p>
+</div>
+<div class="footer-meta"><div class="footer-meta-copyright">© Copyright since 2000 by the TYPO3 Documentation Team</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+            var DOCUMENTATION_OPTIONS = {
+                URL_ROOT: '../',
+                VERSION: 'master (10-dev)',
+                COLLAPSE_INDEX: false,
+                FILE_SUFFIX: '.html',
+                HAS_SOURCE: true
+            };
+        </script>
+<script src="../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../_static/js/theme.min.js" type="text/javascript"></script><script src="../_static/language_data.js" type="text/javascript"></script>
+<script src="../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+</body>
+</html>

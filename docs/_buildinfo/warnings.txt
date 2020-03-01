@@ -1,0 +1,41 @@
+./Documentation/Troubleshooting/Apache/Index.rst:8: WARNING: duplicate label apache, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Apache/Index.rst:17: WARNING: duplicate label enable-necessary-modules, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Apache/Index.rst:30: WARNING: duplicate label adjust-threadstacksize-on-windows, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Index.rst:115: WARNING: duplicate label install-tool, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Php/Index.rst
+./Documentation/Troubleshooting/Index.rst:219: WARNING: duplicate label possible-problems-with-the-cached-files, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Typo3Specific/Index.rst
+./Documentation/Troubleshooting/Index.rst:155: WARNING: duplicate label mysql, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Mysql/Index.rst
+./Documentation/Troubleshooting/Index.rst:137: WARNING: duplicate label php-caches-extension-classes-etc, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Php/Index.rst
+./Documentation/Troubleshooting/Index.rst:60: WARNING: duplicate label enable-necessary-modules, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Apache/Index.rst
+./Documentation/Troubleshooting/Index.rst:173: WARNING: duplicate label typo3-specific, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Typo3Specific/Index.rst
+./Documentation/Troubleshooting/Index.rst:161: WARNING: duplicate label character-sets, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Mysql/Index.rst
+./Documentation/Troubleshooting/Index.rst:224: WARNING: duplicate label changing-the-absolute-path-to-typo3, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Typo3Specific/Index.rst
+./Documentation/Troubleshooting/Index.rst:93: WARNING: duplicate label adjust-threadstacksize-on-windows, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Apache/Index.rst
+./Documentation/Troubleshooting/Index.rst:179: WARNING: duplicate label cached-files-in-typo3temp, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Typo3Specific/Index.rst
+./Documentation/Troubleshooting/Index.rst:50: WARNING: duplicate label apache, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Apache/Index.rst
+./Documentation/Troubleshooting/Index.rst:110: WARNING: duplicate label php, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Php/Index.rst
+./Documentation/Troubleshooting/Index.rst:238: WARNING: duplicate label changing-image-processing-settings, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Typo3Specific/Index.rst
+./Documentation/Troubleshooting/Mysql/Index.rst:14: WARNING: duplicate label character-sets, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Mysql/Index.rst:8: WARNING: duplicate label mysql, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Php/Index.rst:14: WARNING: duplicate label install-tool, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Php/Index.rst:36: WARNING: duplicate label php-caches-extension-classes-etc, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Php/Index.rst:8: WARNING: duplicate label php, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:84: WARNING: duplicate label changing-the-absolute-path-to-typo3, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:8: WARNING: duplicate label typo3-specific, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:26: WARNING: duplicate label cached-files-in-typo3temp, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:79: WARNING: duplicate label possible-problems-with-the-cached-files, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:98: WARNING: duplicate label changing-image-processing-settings, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Troubleshooting/Index.rst
+./Documentation/Linktargets.rst: WARNING: document isn't included in any toctree
+./Documentation/Troubleshooting/Apache/Index.rst: WARNING: document isn't included in any toctree
+./Documentation/Troubleshooting/Mysql/Index.rst: WARNING: document isn't included in any toctree
+./Documentation/Troubleshooting/Php/Index.rst: WARNING: document isn't included in any toctree
+./Documentation/Troubleshooting/Typo3Specific/Index.rst: WARNING: document isn't included in any toctree
+WARNING: unsupported theme option 'show_sphinx' given
+WARNING: unsupported theme option u'show_legalinfo' given
+WARNING: unsupported theme option 'use_opensearch' given
+WARNING: unsupported theme option 'show_revision' given
+./Documentation/ExtensionInstallation/Index.rst:198: WARNING: undefined label: installing-distribution-with-composer (if the link has no caption the label must precede a section header)
+./Documentation/ExtensionInstallation/Index.rst:294: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/MigrateToComposer/MigrationSteps.rst:278: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/MigrateToComposer/MigrationSteps.rst:291: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/ReleaseIntegrity/Index.rst:109: WARNING: Could not lex literal_block as "bash". Highlighting skipped.
+./Documentation/Troubleshooting/Typo3Specific/Index.rst:20: WARNING: undefined label: install-extension-manually (if the link has no caption the label must precede a section header)

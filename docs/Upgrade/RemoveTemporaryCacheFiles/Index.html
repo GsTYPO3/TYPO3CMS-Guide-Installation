@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="master (10-dev)" name="book-version"/>
+<meta content="master (10-dev)" name="book-release"/>
+<meta content="Installation and Upgrade Guide" name="docsearch:name"/>
+<meta content="master (10-dev)" name="docsearch:version"/>
+<meta content="" name="docsearch:package_type"/>
+<title>Clear Caches — Installation and Upgrade Guide master (10-dev) documentation</title>
+<link href="../../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../genindex.html" rel="index" title="Index"/>
+<link href="../../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Installation and Upgrade Guide master (10-dev) documentation"/>
+<link href="../Index.html" rel="up" title="Upgrade"/>
+<link href="../ChangelogAndNewsmd/Index.html" rel="next" title="Check the ChangeLog"/>
+<link href="../ClearCachesAndUserSettings/Index.html" rel="prev" title="Clear User Settings"/>
+<script src="../../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<a class="logo" href="https://docs.typo3.org" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../../_static/img/typo3-logo.svg" width="484"/>
+</a>
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../../Index.html">Installation and Upgrade Guide</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<div class="toc-search" role="search">
+<form action="../../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div><div aria-label="main navigation" class="toc" role="navigation">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction/Index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../QuickInstall/Index.html">Quick Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/Composer/Index.html">Install TYPO3 via composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/GetAndUnpack/Index.html">Install TYPO3 Without Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/TheInstallTool/Index.html">The Install Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../In-depth/Index.html">In-Depth Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/SystemRequirements/Index.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/WhichPackageAndFormat/Index.html">Which Package and Which Format?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/ThePackageInDetail/Index.html">The Package in Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/TheInstallTool/Index.html">TYPO3 System Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/Distributions/Index.html">The Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../In-depth/TranslatingTheBackend/Index.html">Translating the Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Composer/Index.html">Working With Composer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ExtensionInstallation/Index.html">Extension Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Index.html">Upgrade</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Preparation/Index.html">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Backup/Index.html">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../UpdateReferenceIndex/Index.html">Reference Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../InstallTheNewSource/Index.html">Install the New Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ConvertGlobalExtensions/Index.html">Convert Global Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../UseTheUpgradeWizard/Index.html">Use the Upgrade Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../RunTheDatabaseAnalyzer/Index.html">Run the Database Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ClearCachesAndUserSettings/Index.html">Clear User Settings</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Clear Caches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ChangelogAndNewsmd/Index.html">Check the ChangeLog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../UpdateExtensions/Index.html">Update Extensions (non-Composer Installations)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../UpdateTranslations/Index.html">Update Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../UpgradeToV10/Index.html">Upgrade to v10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../MigrateToComposer/Index.html">Migrate TYPO3 Project to Composer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/Requirements.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/MigrationSteps.html">Migration Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/CoWorking.html">Co-working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/BestPractices.html">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ReleaseIntegrity/Index.html">TYPO3 Release Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sitemap/Index.html">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<a accesskey="p" class="no-focus" href="../ClearCachesAndUserSettings/Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../ChangelogAndNewsmd/Index.html" tabindex="-1"></a>
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../../Index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="../Index.html">Upgrade</a></li>
+<li aria-current="page" class="breadcrumb-item active">Clear Caches</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/edit/master/Documentation/Upgrade/RemoveTemporaryCacheFiles/Index.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../../_sources/Upgrade/RemoveTemporaryCacheFiles/Index.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="section" id="clear-caches">
+<span id="remove-temporary-cache-files"></span><h1>Clear Caches<a class="headerlink" href="#clear-caches" title="Permalink to this headline">¶</a></h1>
+<p>You should also clear all caches when upgrading.</p>
+<p>Go to “Maintenance” and click “Flush”:</p>
+<div class="figure" id="id1">
+<img alt="Flush Caches" class="with-shadow" src="../../_images/Important-Actions-Clear-All-Cache.png"/>
+<p class="caption"><span class="caption-text">The option “Flush” in the Install Tool.</span></p>
+</div>
+<p>Additionally, after an upgrade to a new major version, you should also delete
+the other temporary files, which TYPO3 saves in <code class="file docutils literal notranslate"><span class="pre">typo3temp/</span></code>. In the
+Install Tool go to “Clean up” to do so.</p>
+<div class="figure" id="id2">
+<img alt="Remove temporary assets." class="with-shadow" src="../../_images/Remove-Temporary-Assets.png"/>
+<p class="caption"><span class="caption-text">The option “Remove temporary assets” in the Install Tool.</span></p>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../ClearCachesAndUserSettings/Index.html" title="Accesskey Alt(+Shift)+p">
+                        Previous
+                    </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../ChangelogAndNewsmd/Index.html" title="Accesskey Alt(+Shift)+n">
+                        Next
+                    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner"><div class="footer-additional"><p class="text-center">Last rendered on Mar 01, 2020 16:27</p><p class="text-center"><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">TYPO3 Theme 4.1.3</a></p>
+</div>
+<div class="footer-meta"><div class="footer-meta-copyright">© Copyright since 2000 by the TYPO3 Documentation Team</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+            var DOCUMENTATION_OPTIONS = {
+                URL_ROOT: '../../',
+                VERSION: 'master (10-dev)',
+                COLLAPSE_INDEX: false,
+                FILE_SUFFIX: '.html',
+                HAS_SOURCE: true
+            };
+        </script>
+<script src="../../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../_static/js/theme.min.js" type="text/javascript"></script><script src="../../_static/language_data.js" type="text/javascript"></script>
+<script src="../../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+</body>
+</html>

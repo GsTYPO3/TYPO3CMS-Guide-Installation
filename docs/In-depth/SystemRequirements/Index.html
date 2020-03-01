@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="master (10-dev)" name="book-version"/>
+<meta content="master (10-dev)" name="book-release"/>
+<meta content="Installation and Upgrade Guide" name="docsearch:name"/>
+<meta content="master (10-dev)" name="docsearch:version"/>
+<meta content="" name="docsearch:package_type"/>
+<title>System Requirements — Installation and Upgrade Guide master (10-dev) documentation</title>
+<link href="../../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../genindex.html" rel="index" title="Index"/>
+<link href="../../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Installation and Upgrade Guide master (10-dev) documentation"/>
+<link href="../Index.html" rel="up" title="In-Depth Installation"/>
+<link href="../WhichPackageAndFormat/Index.html" rel="next" title="Which Package and Which Format?"/>
+<link href="../Index.html" rel="prev" title="In-Depth Installation"/>
+<script src="../../_static/js/requirements.js" type="text/javascript"></script>
+<script src="../../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<a class="logo" href="https://docs.typo3.org" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../../_static/img/typo3-logo.svg" width="484"/>
+</a>
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../../Index.html">Installation and Upgrade Guide</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<div class="toc-search" role="search">
+<form action="../../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div><div aria-label="main navigation" class="toc" role="navigation">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction/Index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../QuickInstall/Index.html">Quick Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/Composer/Index.html">Install TYPO3 via composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/GetAndUnpack/Index.html">Install TYPO3 Without Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../QuickInstall/TheInstallTool/Index.html">The Install Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Index.html">In-Depth Installation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../WhichPackageAndFormat/Index.html">Which Package and Which Format?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ThePackageInDetail/Index.html">The Package in Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TheInstallTool/Index.html">TYPO3 System Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Distributions/Index.html">The Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TranslatingTheBackend/Index.html">Translating the Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Composer/Index.html">Working With Composer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ExtensionInstallation/Index.html">Extension Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Upgrade/Index.html">Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/Preparation/Index.html">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/Backup/Index.html">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/UpdateReferenceIndex/Index.html">Reference Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/InstallTheNewSource/Index.html">Install the New Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/ConvertGlobalExtensions/Index.html">Convert Global Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/UseTheUpgradeWizard/Index.html">Use the Upgrade Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/RunTheDatabaseAnalyzer/Index.html">Run the Database Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/ClearCachesAndUserSettings/Index.html">Clear User Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/RemoveTemporaryCacheFiles/Index.html">Clear Caches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/ChangelogAndNewsmd/Index.html">Check the ChangeLog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/UpdateExtensions/Index.html">Update Extensions (non-Composer Installations)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/UpdateTranslations/Index.html">Update Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Upgrade/UpgradeToV10/Index.html">Upgrade to v10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../MigrateToComposer/Index.html">Migrate TYPO3 Project to Composer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/Requirements.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/MigrationSteps.html">Migration Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/CoWorking.html">Co-working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../MigrateToComposer/BestPractices.html">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ReleaseIntegrity/Index.html">TYPO3 Release Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Troubleshooting/Index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Sitemap/Index.html">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<a accesskey="p" class="no-focus" href="../Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../WhichPackageAndFormat/Index.html" tabindex="-1"></a>
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../../Index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="../Index.html">In-Depth Installation</a></li>
+<li aria-current="page" class="breadcrumb-item active">System Requirements</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/edit/master/Documentation/In-depth/SystemRequirements/Index.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../../_sources/In-depth/SystemRequirements/Index.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="section" id="system-requirements">
+<span id="id1"></span><h1>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h1>
+<p>TYPO3 requires a web server, PHP and a database system.</p>
+<ul class="simple">
+<li>TYPO3 requires a <strong>web server</strong> which can run PHP (<span class="js-webserver">e.g. Apache, Nginx or IIS</span>).
+If you use an Apache web server, some module (e.g. mod_rewrite) must be activated.
+See <a class="reference internal" href="#system-requirements-webserver"><span class="std std-ref">Web Server Environment</span></a> for details.</li>
+<li>TYPO3 10 requires <strong>PHP</strong> (<span class="js-php">&gt;&gt;= 7.2 &lt;= 7.4</span>) - Mac users: see warning at the end of this document.
+For PHP, several PHP extensions are necessary, others recommended. You possibly want to
+adjust the memory limit. See <a class="reference internal" href="#system-requirements-php"><span class="std std-ref">PHP Environment</span></a>.</li>
+<li>TYPO3 can be used with a great many <strong>database</strong> systems (<span class="js-database">e.g. MySQL &gt;= 5 &lt;= 5.7,
+PostgreSQL, Microsoft SQL Server, SQLite or MariaDB &gt;= 10 &lt;= 10.3</span>).
+See <a class="reference internal" href="#system-requirements-database"><span class="std std-ref">Database Environment</span></a> on this page for details.</li>
+<li>If you want TYPO3 to automatically carry out <strong>image processing</strong> – for example
+scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or
+ImageMagick (version 6 or
+newer) installed on the server. (GraphicsMagick should be preferred.)</li>
+</ul>
+<p>For an overview see also <a class="reference external" href="https://get.typo3.org/version/10#system-requirements">get.typo3.org</a>.</p>
+<p>Should you encounter problems, the “<a class="reference internal" href="../../Troubleshooting/Index.html#troubleshooting"><span class="std std-ref">Troubleshooting</span></a>” chapter will help.</p>
+<div class="section" id="database-environment">
+<span id="system-requirements-database"></span><h2>Database Environment<a class="headerlink" href="#database-environment" title="Permalink to this headline">¶</a></h2>
+<p>TYPO3 works with database management systems in the above mentioned versions.
+The InnoDB engine is required to be enabled in MySQL.</p>
+<div class="section" id="required-database-privileges">
+<h3>Required Database Privileges<a class="headerlink" href="#required-database-privileges" title="Permalink to this headline">¶</a></h3>
+<p>The database user needs at least the following privileges on the TYPO3
+database:</p>
+<ul class="simple">
+<li>SELECT, INSERT, UPDATE, DELETE</li>
+<li>CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES</li>
+</ul>
+<p>It is recommended to also grant the following privileges:</p>
+<ul class="simple">
+<li>CREATE VIEW, SHOW VIEW</li>
+<li>EXECUTE, CREATE ROUTINE, ALTER ROUTINE</li>
+</ul>
+</div>
+</div>
+<div class="section" id="web-server-environment">
+<span id="system-requirements-webserver"></span><h2>Web Server Environment<a class="headerlink" href="#web-server-environment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="apache">
+<span id="system-requirements-apache"></span><h3>Apache<a class="headerlink" href="#apache" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Make sure <a class="reference external" href="https://httpd.apache.org/docs/current/mod/core.html#allowoverride" rel="nofollow noopener">AllowOverride</a>
+in the webserver configuration includes “Indexes” and “FileInfo” if you use Apache as
+webserver and override the default configuration with <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code> (as done by default).</li>
+<li>Enable Apache modules (see <a class="reference internal" href="../../Troubleshooting/Index.html#enable-necessary-modules"><span class="std std-ref">Enable mod_rewrite</span></a> in the Troubleshooting
+section). The following modules are used by the default <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code>:</li>
+</ul>
+<dl class="docutils">
+<dt>mod_alias:</dt>
+<dd>Block access to vcs directories
+(strongly recommended for security reasons).</dd>
+<dt>mod_authz_core:</dt>
+<dd>Block access to specific files and directories
+(strongly recommended for security reasons).</dd>
+<dt>mod_autoindex:</dt>
+<dd>Used for disabling directory listings
+(strongly recommended for security reasons).</dd>
+<dt>mod_deflate:</dt>
+<dd>Used for compression, better performance.</dd>
+<dt>mod_expires:</dt>
+<dd>Adds HTTP headers for browser caching and better
+performance</dd>
+<dt>mod_filter:</dt>
+<dd>Used with mod_deflate. For Apache versions below
+version 2.3.7 you don’t need to enable <code class="code docutils literal notranslate"><span class="pre">mod_filter</span></code>.</dd>
+<dt>mod_headers:</dt>
+<dd>Used in combination with <code class="code docutils literal notranslate"><span class="pre">mod_deflate</span></code>.</dd>
+<dt>mod_rewrite:</dt>
+<dd>Enable human readable urls.</dd>
+<dt>mod_setenvif:</dt>
+<dd>Also used with <code class="code docutils literal notranslate"><span class="pre">mod_deflate</span></code>.</dd>
+</dl>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">If the modules are not active, the corresponding directives in <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code> will
+not be activated (due to the <code class="code docutils literal notranslate"><span class="pre">&lt;IfModule</span></code> conditions). This leaves you with a system,
+which is less secure, slower and / or where some things will simply not work
+(e.g. URL rewriting due to missing <code class="code docutils literal notranslate"><span class="pre">mod_rewrite</span></code>).</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Look for <code class="code docutils literal notranslate"><span class="pre">&lt;IfModule&gt;</span></code> directives in the default <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code> file
+<a class="reference external" href="https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess" rel="nofollow noopener">EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess</a>
+for more clues about which modules are used for what purpose. Not all used modules
+may have directives in the .htaccess file so do not necessarily expect <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code>
+to contain a complete list of modules.</p>
+</div>
+<ul class="simple">
+<li>During the installation process (first install) the default <code class="file docutils literal notranslate"><span class="pre">.htaccess</span></code> file is
+copied to the document root folder of the project, if the file does not exist already.</li>
+</ul>
+</div>
+<div class="section" id="microsoft-internet-information-services-iis">
+<h3>Microsoft Internet Information Services (IIS)<a class="headerlink" href="#microsoft-internet-information-services-iis" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>During the installation process (first install) the default IIS web config file is
+copied to the document root folder of the project, if the file does not exist already.</li>
+<li>Default IIS web config file with rewrite rules can be found in
+<code class="file docutils literal notranslate"><span class="pre">EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config</span></code></li>
+</ul>
+</div>
+<div class="section" id="nginx">
+<h3>NGINX<a class="headerlink" href="#nginx" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>NGINX web server does not support any static file like htaccess in the document root by default.
+The NGINX configuration has to be setup manually.</li>
+<li>Examples of NGINX vHost config files with rewrite rules can be found in
+TYPO3 Forge. <a class="reference external" href="https://forge.typo3.org/issues/54316">Provide a Nginx server configuration</a>.</li>
+</ul>
+</div>
+<div class="section" id="php-environment">
+<span id="system-requirements-php"></span><h3>PHP Environment<a class="headerlink" href="#php-environment" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>memory_limit set to at least 256M recommended</li>
+<li>max_execution_time set to at least 30 (240 seconds recommended)</li>
+<li>max_input_vars set to at least 1500</li>
+</ul>
+<div class="section" id="php-required-extensions">
+<h4>PHP Required Extensions<a class="headerlink" href="#php-required-extensions" title="Permalink to this headline">¶</a></h4>
+<p>Your PHP needs to support the following extensions. Install will check if these
+are available.</p>
+<ul class="simple">
+<li>These are usually part of the standard PHP package on most distributions:<ul>
+<li>PDO</li>
+<li>json</li>
+<li>pcre &gt;= 8.38 (Mac users: see warning a the end of this document)</li>
+<li>session</li>
+<li>xml</li>
+<li>filter</li>
+<li>hash</li>
+<li>mbstring</li>
+<li>SPL</li>
+<li>standard</li>
+</ul>
+</li>
+<li>These might have to be installed separately:<ul>
+<li>fileinfo</li>
+<li>gd</li>
+<li>zip</li>
+<li>zlib</li>
+<li>openssl</li>
+<li>intl</li>
+<li>mysqli (if you use MySQL, MariaDB as DBMS)</li>
+<li>postgresql (if you use PostgreSQL as DBMS)</li>
+<li>sqlsrv (if you use SQL Server as DBMS)</li>
+<li>sqlite (if you use SQLite as DBMS)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>With <strong>PHP 7.3</strong> in combination with <strong>macOS</strong> 10.13.6 (and probably also 10.14 - unconfirmed)
+pcre causes problems with brew as well as native or MAMP installations. It is
+recommended to use PHP 7.2. More information can be found here:</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://github.com/bobthecow/psysh/issues/540" rel="nofollow noopener">Not working after upgrading to 7.3</a></li>
+<li><a class="reference external" href="https://bugs.php.net/bug.php?id=77260" rel="nofollow noopener">Bug #77260       preg_match_all(): JIT compilation failed: no more memory</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../Index.html" title="Accesskey Alt(+Shift)+p">
+                        Previous
+                    </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../WhichPackageAndFormat/Index.html" title="Accesskey Alt(+Shift)+n">
+                        Next
+                    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner"><div class="footer-additional"><p class="text-center">Last rendered on Mar 01, 2020 16:27</p><p class="text-center"><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">TYPO3 Theme 4.1.3</a></p>
+</div>
+<div class="footer-meta"><div class="footer-meta-copyright">© Copyright since 2000 by the TYPO3 Documentation Team</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+            var DOCUMENTATION_OPTIONS = {
+                URL_ROOT: '../../',
+                VERSION: 'master (10-dev)',
+                COLLAPSE_INDEX: false,
+                FILE_SUFFIX: '.html',
+                HAS_SOURCE: true
+            };
+        </script>
+<script src="../../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../_static/js/theme.min.js" type="text/javascript"></script><script src="../../_static/language_data.js" type="text/javascript"></script>
+<script src="../../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+</body>
+</html>

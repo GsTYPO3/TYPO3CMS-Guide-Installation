@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="master (10-dev)" name="book-version"/>
+<meta content="master (10-dev)" name="book-release"/>
+<meta content="Installation and Upgrade Guide" name="docsearch:name"/>
+<meta content="master (10-dev)" name="docsearch:version"/>
+<meta content="" name="docsearch:package_type"/>
+<title>Extension Installation — Installation and Upgrade Guide master (10-dev) documentation</title>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Installation and Upgrade Guide master (10-dev) documentation"/>
+<link href="../Upgrade/Index.html" rel="next" title="Upgrade"/>
+<link href="../Composer/Index.html" rel="prev" title="Working With Composer"/>
+<script src="../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<a class="logo" href="https://docs.typo3.org" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../_static/img/typo3-logo.svg" width="484"/>
+</a>
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../Index.html">Installation and Upgrade Guide</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<div class="toc-search" role="search">
+<form action="../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div><div aria-label="main navigation" class="toc" role="navigation">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/Index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../QuickInstall/Index.html">Quick Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/Composer/Index.html">Install TYPO3 via composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/GetAndUnpack/Index.html">Install TYPO3 Without Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QuickInstall/TheInstallTool/Index.html">The Install Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../In-depth/Index.html">In-Depth Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/SystemRequirements/Index.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/WhichPackageAndFormat/Index.html">Which Package and Which Format?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/ThePackageInDetail/Index.html">The Package in Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/TheInstallTool/Index.html">TYPO3 System Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/Distributions/Index.html">The Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../In-depth/TranslatingTheBackend/Index.html">Translating the Backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Composer/Index.html">Working With Composer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extension Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Upgrade/Index.html">Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/Preparation/Index.html">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/Backup/Index.html">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateReferenceIndex/Index.html">Reference Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/InstallTheNewSource/Index.html">Install the New Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ConvertGlobalExtensions/Index.html">Convert Global Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UseTheUpgradeWizard/Index.html">Use the Upgrade Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/RunTheDatabaseAnalyzer/Index.html">Run the Database Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ClearCachesAndUserSettings/Index.html">Clear User Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/RemoveTemporaryCacheFiles/Index.html">Clear Caches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/ChangelogAndNewsmd/Index.html">Check the ChangeLog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateExtensions/Index.html">Update Extensions (non-Composer Installations)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpdateTranslations/Index.html">Update Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Upgrade/UpgradeToV10/Index.html">Upgrade to v10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../MigrateToComposer/Index.html">Migrate TYPO3 Project to Composer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/Requirements.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/MigrationSteps.html">Migration Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/CoWorking.html">Co-working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MigrateToComposer/BestPractices.html">Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ReleaseIntegrity/Index.html">TYPO3 Release Integrity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Troubleshooting/Index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sitemap/Index.html">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<a accesskey="p" class="no-focus" href="../Composer/Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../Upgrade/Index.html" tabindex="-1"></a>
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
+<li aria-current="page" class="breadcrumb-item active">Extension Installation</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/edit/master/Documentation/ExtensionInstallation/Index.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../_sources/ExtensionInstallation/Index.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<div class="section" id="extension-installation">
+<span id="id1"></span><h1>Extension Installation<a class="headerlink" href="#extension-installation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If you have installed TYPO3 with Composer, you should also
+<a class="reference internal" href="#install-extension-with-composer"><span class="std std-ref">install extensions with Composer</span></a>.</p>
+</div>
+<p>In the context of the TYPO3 extension manager (“EM”), the words “install” and “uninstall” differ from their mainstream
+meaning. To avoid mixing these terms up with the other EM verbs, here is a clarification:</p>
+<dl class="docutils">
+<dt>Import</dt>
+<dd>Downloading an extension from TER and copying it to <code class="file docutils literal notranslate"><span class="pre">typo3conf/ext/</span></code>.</dd>
+<dt>Install</dt>
+<dd>Activating the already imported extension inside the extension manager and performing database changes mandated by the extension.</dd>
+<dt>Uninstall</dt>
+<dd>Deactivating an extension, but leaving it on the disk.</dd>
+<dt>Remove</dt>
+<dd>Deleting extension files permanently from disk.</dd>
+</dl>
+<div class="section" id="install-an-extension-without-composer">
+<span id="install-extension-without-composer"></span><h2>Install an Extension Without Composer<a class="headerlink" href="#install-an-extension-without-composer" title="Permalink to this headline">¶</a></h2>
+<p>In the backend:</p>
+<ol class="bignums arabic">
+<li><p class="first">Got to <span class="guilabel">“ADMIN TOOLS” &gt; “Extensions”</span></p>
+</li>
+<li><p class="first">In the Docheader, select <span class="guilabel">“Get Extensions”</span></p>
+<div class="figure" id="id2">
+<img alt='Select "Get Extensions" in Extension Manager' class="with-shadow" src="../_images/em_extensions.png"/>
+<p class="caption"><span class="caption-text">Select “Get Extensions” in Extension Manager</span></p>
+</div>
+</li>
+<li><p class="first">Click <span class="guilabel">“Update now”</span></p>
+<p>The button is on the top right.</p>
+<div class="figure" id="id3">
+<img alt="Search for the extension and install" class="with-shadow" src="../_images/em_extensions_get.png"/>
+<p class="caption"><span class="caption-text">Search for the extension and install</span></p>
+</div>
+</li>
+<li><p class="first">Enter the name of the extension in the search field</p>
+</li>
+<li><p class="first">Click on <span class="guilabel">“Go”</span></p>
+</li>
+<li><p class="first">Click on the Action icon on the left for the extension:</p>
+<p><span class="guilabel">“Import and Install”</span></p>
+<p>Now the extension is installed, but not activated. To activate:</p>
+</li>
+<li><p class="first">Choose <span class="guilabel">“Installed Extensions”</span> in the Docheader</p>
+</li>
+<li><p class="first">Click on the icon with a <span class="guilabel">“+”</span> sign for your extension
+in the <span class="guilabel">“A/D”</span> column.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="uninstall-an-extension-without-composer">
+<span id="uninstall-extension-without-composer"></span><h2>Uninstall an Extension Without Composer<a class="headerlink" href="#uninstall-an-extension-without-composer" title="Permalink to this headline">¶</a></h2>
+<p>If you installed TYPO3 via composer you should uninstall Extensions via composer.</p>
+<div class="section" id="check-dependencies">
+<h3>Check Dependencies<a class="headerlink" href="#check-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>First find out, which other extensions and functions of your TYPO3 installation are dependent on the extension you
+want to uninstall. You can find out about the dependencies by checking the
+<a class="reference external" href="https://extensions.typo3.org/">Extension Repository</a>. Look for the extension
+you want to uninstall and the others you have installed. Read in each extensions manual the sections ‘Dependencies’ and
+‘Reverse dependencies’.</p>
+<p>Contemplate, whether you made referrals to the extension in any setup, config or other TypoScript section. Check if you
+included a plugin from the extension in your web site. Think of the results of removing them and finally do it.</p>
+<p>If you are working locally or on a test server you might as well try to uninstall the extension. The Extension Manager
+warns you about dependencies that are written in an extensions <code class="file docutils literal notranslate"><span class="pre">ext_emconf.php</span></code> constraints section. Note however
+that you depend on the extensions developers faithfully noting all dependencies in this config file.</p>
+<p>If you get an exception and can’t even access the Extension Manager anymore because of it, you can uninstall / install
+extensions manually with <code class="file docutils literal notranslate"><span class="pre">PackageStates.php</span></code> as a last resort, see <a class="reference internal" href="#uninstall-extension-manually"><span class="std std-ref">Uninstalling an Extension Manually</span></a></p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Be sure not to uninstall extensions by trial and error on production systems, expecially not under time pressure.</p>
+</div>
+</div>
+<div class="section" id="uninstall-deactivate-extension-via-typo3-backend">
+<span id="uninstall-extension-backend"></span><h3>Uninstall / Deactivate Extension via TYPO3 Backend<a class="headerlink" href="#uninstall-deactivate-extension-via-typo3-backend" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt='Select "Deactivate" in Extension Manager' class="with-shadow" src="../_images/em-uninstall-extension.png"/>
+</div>
+<p>Log into the TYPO3 Backend and open the Extension Manager (‘Ext Manager’). From the menu choose ‘Install extensions’.
+You get an overview about installed extensions.</p>
+<p>On the left side you see an icon, which shows the status of each extension, and what you can do:</p>
+<ul class="simple">
+<li>Extension Install Icon with plus sign: The extension is not installed. (Click once to install)</li>
+<li>Extension Uninstall Icon with minus sign: The extension is installed and running. (Click once to uninstall)</li>
+</ul>
+<p>Next to the extension you want to uninstall click on Extension UnInstall Icon. After some seconds the icon changes to
+the grey Extension Install Icon.</p>
+</div>
+<div class="section" id="remove-an-extension-via-the-typo3-backend">
+<span id="remove-extension-backend"></span><h3>Remove an Extension via the TYPO3 Backend<a class="headerlink" href="#remove-an-extension-via-the-typo3-backend" title="Permalink to this headline">¶</a></h3>
+<div class="figure">
+<img alt='Select "Remove" in Extension Manager' class="with-shadow" src="../_images/em-remove-extension.png"/>
+</div>
+<p>After successfully uninstalling an extension via the Extension Manager you can permanently remove the extension by
+clicking on the waste-basket symbol “Remove” beside the extensions entry in the Extension Manager.</p>
+</div>
+<div class="section" id="uninstalling-an-extension-manually">
+<span id="uninstall-extension-manually"></span><h3>Uninstalling an Extension Manually<a class="headerlink" href="#uninstalling-an-extension-manually" title="Permalink to this headline">¶</a></h3>
+<p>At times an extension causes a problem and the TYPO3 Backend can not be opened anymore due to it. In such a case the
+extension can be uninstalled manually. This is not common practise but a last resort.</p>
+<p>Since LTS8 this can be done by removing the extensions configuration from the file <code class="file docutils literal notranslate"><span class="pre">PackageStates.php</span></code></p>
+<ol class="bignums arabic">
+<li><p class="first">Open the file <code class="file docutils literal notranslate"><span class="pre">typo3conf/PackageStates.php</span></code></p>
+</li>
+<li><p class="first">Search for your ext_key in the array.</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="s1">'ext_key'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+      <span class="s1">'packagePath'</span> <span class="o">=&gt;</span> <span class="s1">'typo3conf/ext/ext_key/'</span><span class="p">,</span>
+  <span class="p">],</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Remove the entry.</p>
+</li>
+</ol>
+<p>It is no longer possible to remove an extension by setting <code class="code php docutils literal notranslate"><span class="pre">'state'</span> <span class="pre">=&gt;</span> <span class="pre">'inactive'</span></code> as was possible in LTS 6 and 7.</p>
+<p>In LTS 6 and 7 this can be done by editing the file <code class="file docutils literal notranslate"><span class="pre">PackageStates.php</span></code></p>
+<ol class="bignums arabic">
+<li><p class="first">Open the file <code class="file docutils literal notranslate"><span class="pre">typo3conf/PackageStates.php</span></code></p>
+</li>
+<li><p class="first">Search for your ext_key in the array.</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="s1">'ext_key'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+   <span class="s1">'composerName'</span> <span class="o">=&gt;</span> <span class="s1">'...'</span><span class="p">,</span>
+   <span class="s1">'state'</span> <span class="o">=&gt;</span> <span class="s1">'active'</span><span class="p">,</span>
+   <span class="s1">'packagePath'</span> <span class="o">=&gt;</span> <span class="s1">'.../'</span><span class="p">,</span>
+   <span class="s1">'suggestions'</span> <span class="o">=&gt;</span> <span class="p">[],</span>
+<span class="p">],</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Change <code class="code php docutils literal notranslate"><span class="pre">'state'</span> <span class="pre">=&gt;</span> <span class="pre">'active'</span></code> to <code class="code php docutils literal notranslate"><span class="pre">'state'</span> <span class="pre">=&gt;</span> <span class="pre">'inactive'</span></code></p>
+</li>
+</ol>
+</div>
+<div class="section" id="removing-an-extension-manually">
+<span id="remove-extension-manually"></span><h3>Removing an Extension Manually<a class="headerlink" href="#removing-an-extension-manually" title="Permalink to this headline">¶</a></h3>
+<p>Removing an extension manually is not common practice and should only be done as a last resort. You should only remove
+an extension that you uninstalled successfully. Make a backup first. Then you can permanently
+remove an extension by removing its folder at <code class="file docutils literal notranslate"><span class="pre">typo3conf/ext/[extensionname]</span></code>. The corresponding database tables
+can be removed in the <span class="guilabel">Install Tool -&gt; Important Actions -&gt; Database analyzer -&gt; Compare current database
+with specification</span>.</p>
+</div>
+</div>
+<div class="section" id="install-an-extension-with-composer">
+<span id="install-extension-with-composer"></span><h2>Install an Extension With Composer<a class="headerlink" href="#install-an-extension-with-composer" title="Permalink to this headline">¶</a></h2>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">These are the same steps that are used for <span class="xref std std-ref">installing a distribution
+with Composer</span>.</p>
+</div>
+<p>On the command line:</p>
+<ol class="bignums arabic">
+<li><p class="first">Find out the Composer package name and extension key of the extension:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#find-out-composer-package-name"><span class="std std-ref">Find out Composer Package Name for an Extension</span></a></li>
+<li><a class="reference internal" href="#find-out-extension-key"><span class="std std-ref">Find out the Extension Key for an Extension</span></a></li>
+</ul>
+</li>
+<li><p class="first">Use <code class="code docutils literal notranslate"><span class="pre">composer</span> <span class="pre">require</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>composer require &lt;packagename&gt;
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>composer require georgringer/news
+</pre></div>
+</div>
+<p>This will add the extension requirement to your <code class="file docutils literal notranslate"><span class="pre">composer.json</span></code>
+and install the extension.</p>
+<p>The extension will - not yet - be active. You must activate it with:</p>
+</li>
+<li><p class="first">Activate</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./vendor/bin/typo3 extension:activate &lt;extension key&gt;
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./vendor/bin/typo3 extension:activate news
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="remove-extensions-with-composer">
+<h2>Remove Extensions With Composer<a class="headerlink" href="#remove-extensions-with-composer" title="Permalink to this headline">¶</a></h2>
+<p>see <a class="reference internal" href="../Composer/Index.html#composer-remove-extension"><span class="std std-ref">Remove Extensions</span></a></p>
+</div>
+<div class="section" id="find-out-composer-package-name-for-an-extension">
+<span id="find-out-composer-package-name"></span><h2>Find out Composer Package Name for an Extension<a class="headerlink" href="#find-out-composer-package-name-for-an-extension" title="Permalink to this headline">¶</a></h2>
+<p>For example go to the <a class="reference external" href="https://extensions.typo3.org/">Extension Repository</a>,
+and search for the extension.</p>
+<p>You should see the Composer command under <span class="guilabel">“Composer support”</span>,
+for example <a class="reference external" href="https://extensions.typo3.org/extension/news/">for the extension news</a>.</p>
+<p>Here, the package name is <code class="code docutils literal notranslate"><span class="pre">georgringer/news</span></code>.</p>
+<div class="figure" id="id4">
+<img alt='Detail view for extension "news"' class="with-shadow" src="../_images/ter_news.png"/>
+<p class="caption"><span class="caption-text">Detail view for extension “news”</span></p>
+</div>
+<p>Often the package name will be vendor + slash + extension key.
+However, if the extension key contains an underscore, it is replaced
+with a slash in the package name. Example for
+<a class="reference external" href="https://extensions.typo3.org/extension/extension_builder/">Extension Builder</a>:</p>
+<ul class="simple">
+<li><strong>extension key</strong>: extension_builder</li>
+<li><strong>Composer package name</strong>: friendsoftypo3/extension-builder</li>
+</ul>
+</div>
+<div class="section" id="extension-dependencies">
+<span id="composer-extension-dependencies"></span><h2>Extension Dependencies<a class="headerlink" href="#extension-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>This section is about finding out about extension dependencies for Composer installation.</p>
+<p>When you install an extension, another extension may automatically have been installed
+as was the case for the <a class="reference internal" href="../In-depth/Distributions/Index.html#installing-introduction-package-with-composer"><span class="std std-ref">installation of the Introduction Package</span></a>:
+The Introduction Package depends on the Bootstrap Package and this extension was installed
+as well.</p>
+<p>This is relevant, because after the installation, both need to be activated.</p>
+<p>You can see the dependencies on <a class="reference external" href="https://packagist.org" rel="nofollow noopener">https://packagist.org</a> (for example for the
+<a class="reference external" href="https://packagist.org/packages/typo3/cms-introduction" rel="nofollow noopener">Introduction Package</a>)
+or in the composer.json file of the extension, for example:</p>
+<p><code class="file docutils literal notranslate"><span class="pre">public/typo3conf/ext/introduction/composer.json</span></code>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"require": {
+   "typo3/cms-core": "^9.5",
+   "typo3/cms-impexp": "^9.5",
+   "typo3/cms-form": "^9.5",
+   "typo3/cms-indexed-search": "^9.5",
+   "typo3/cms-felogin": "^9.5",
+   "bk2k/bootstrap-package": "^10.0"
+},
+</pre></div>
+</div>
+<p>Here, the package name is bk2k/bootstrap-package, but the extension key is bootstrap_package,
+as is explained in <a class="reference internal" href="#find-out-composer-package-name"><span class="std std-ref">Find out Composer Package Name for an Extension</span></a>.</p>
+</div>
+<div class="section" id="additional-information">
+<h2>Additional Information<a class="headerlink" href="#additional-information" title="Permalink to this headline">¶</a></h2>
+<p>The following is independant of whether you install with Composer or without.</p>
+<div class="section" id="find-out-the-extension-key-for-an-extension">
+<span id="find-out-extension-key"></span><h3>Find out the Extension Key for an Extension<a class="headerlink" href="#find-out-the-extension-key-for-an-extension" title="Permalink to this headline">¶</a></h3>
+<p>Again, go to the <a class="reference external" href="https://extensions.typo3.org/">Extension Repository</a>,
+and search for the extension.</p>
+<div class="figure" id="id5">
+<img alt='Detail view for extension "news"' class="with-shadow" src="../_images/ter_news.png"/>
+<p class="caption"><span class="caption-text">Detail view for extension “news”</span></p>
+</div>
+<p>The extension key is listed on the top. For the
+<a class="reference external" href="https://extensions.typo3.org/extension/news/">extension news</a>,
+the extension key is <code class="code docutils literal notranslate"><span class="pre">news</span></code>.</p>
+<p>You can also see the extension key in your file system in the directory
+<code class="file docutils literal notranslate"><span class="pre">public/typo3conf/ext/</span></code>. The directory name of the extension is the
+same as the extension key.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../Composer/Index.html" title="Accesskey Alt(+Shift)+p">
+                        Previous
+                    </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../Upgrade/Index.html" title="Accesskey Alt(+Shift)+n">
+                        Next
+                    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner"><div class="footer-additional"><p class="text-center">Last rendered on Mar 01, 2020 16:27</p><p class="text-center"><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">TYPO3 Theme 4.1.3</a></p>
+</div>
+<div class="footer-meta"><div class="footer-meta-copyright">© Copyright since 2000 by the TYPO3 Documentation Team</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript">
+            var DOCUMENTATION_OPTIONS = {
+                URL_ROOT: '../',
+                VERSION: 'master (10-dev)',
+                COLLAPSE_INDEX: false,
+                FILE_SUFFIX: '.html',
+                HAS_SOURCE: true
+            };
+        </script>
+<script src="../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../_static/js/theme.min.js" type="text/javascript"></script><script src="../_static/language_data.js" type="text/javascript"></script>
+<script src="../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+</body>
+</html>
